@@ -1,0 +1,251 @@
+/* VARIABLES */
+
+:root {
+    --color-primario: #4CAF50;
+    /* Verde claro */
+    --color-secundario: #1565C0;
+    /* Azul */
+    --color-fondo: #F5FDF7;
+    /* Blanco verdoso */
+    --color-texto: #1E1E1E;
+    --color-blanco: #FFFFFF;
+
+    --fuente-principal: 'Poppins', sans-serif;
+}
+
+/* RESET*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*BODY*/
+
+body {
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    line-height: 1.6;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*HEADER*/
+
+header {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/*NAVEGACIÓN*/
+
+nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-blanco);
+
+    margin-right: 20px;
+
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-primario);
+}
+
+/*MAIN*/
+
+main {
+    padding: 20px;
+}
+
+/*SECCIONES*/
+
+section {
+    background-color: var(--color-blanco);
+
+    margin-bottom: 25px;
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* TÍTULOS*/
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    color: var(--color-secundario);
+
+    font-size: 1.6rem;
+
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: var(--color-primario);
+
+    font-size: 1.3rem;
+}
+
+/*PÁRRAFOS*/
+
+p {
+    margin-bottom: 15px;
+}
+
+/* LISTAS*/
+
+ul,
+ol,
+dl {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/*IMÁGENES*/
+
+img {
+    border-radius: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    max-width: 100%;
+}
+
+/*LINKS GENERALES*/
+
+a {
+    color: var(--color-secundario);
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+
+    text-align: center;
+
+    padding: 15px;
+    margin-top: 20px;
+
+    border-radius: 10px;
+}
+
+/*FORMULARIOS*/
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+/*ID PRESENTACIÓN*/
+
+#presentación {
+    border-left: 6px solid var(--color-primario);
+}
+
+/*CLASE ESPECIAL*/
+
+.destacado {
+    color: var(--color-primario);
+    font-weight: bold;
+}
+/*TABLAS*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+/*FORMULARIOS*/
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+
+    font-family: var(--fuente-principal);
+}
+
+input[type="submit"] {
+    background-color: var(--color-primario);
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color-secundario);
+}
